@@ -1,9 +1,26 @@
+https://github.com/rstaneja/example-repo.git
+
+cd : To navigate to your home directory, use "cd" or "cd ~"
+cd .. : To navigate up one directory level, use "cd .."
+cd - : To navigate to the previous directory (or back), use "cd -"
+cd / : To navigate into the root directory, use "cd /"
+pwd :     Directory
+mkdir :  Create directory
+ls -la :    list files
+ 
+git clone:             https://github.com/rstaneja/example-repo.git example-repo
+git -c http.sslVerify=false : certificate fix
+git -c http.sslVerify=false clone https://github.com/rstaneja/example-repo.git example_repo
+
+git status : status of files in the directory
+git add : add files to git (staged)
+git commit -m "Initial Commit"
+
+git checkout -b master: src refspec master does not match any
 git -init
-To navigate to your home directory, use "cd" or "cd ~"
-To navigate up one directory level, use "cd .."
-To navigate to the previous directory (or back), use "cd -"
-To navigate into the root directory, use "cd /"
 git remote add origin https://github.com/rstaneja/example-repo
-git pull origin master --allow-unrelated-histories
-git diff
+git diff	q to get out of diff
+	
 git pull origin master
+git pull origin master --allow-unrelated-histories
+git -c http.sslVerify=false push origin master
