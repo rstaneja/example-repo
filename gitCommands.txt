@@ -6,3 +6,4 @@ To navigate into the root directory, use "cd /"
 git remote add origin https://github.com/rstaneja/example-repo
 git pull origin master --allow-unrelated-histories
 git diff
+git pull origin master
