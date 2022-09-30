@@ -4,3 +4,5 @@ To navigate up one directory level, use "cd .."
 To navigate to the previous directory (or back), use "cd -"
 To navigate into the root directory, use "cd /"
 git remote add origin https://github.com/rstaneja/example-repo
+git pull origin master --allow-unrelated-histories
+git diff
