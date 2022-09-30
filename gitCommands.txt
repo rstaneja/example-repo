@@ -16,17 +16,37 @@ git status : status of files in the directory
 git add : add files to git (staged)
 git commit -m "Initial Commit"
 
+===========================
+Adding remote site "origin" / 
+checkout master branch / 
+Initialize directory for git
+===========================
+git remote add origin https://github.com/rstaneja/example-repo
 git checkout -b master: src refspec master does not match any
 git -init
-git remote add origin https://github.com/rstaneja/example-repo
+
 git diff	q to get out of diff
-	
+
+======================================================================	
+Pulling from master (includes cases where local branch is not current)
+======================================================================
 git pull origin master
 git pull origin master --allow-unrelated-histories
 git -c http.sslVerify=false push origin master
 
+===================================
+Log and going to different version
+===================================
 git log
 git checkout 3b90b6c81b2fb49104533ec48912a91f8792705a  (go to previous version)
 git checkout master
 
+===================
+Add to config file
+===================
+[remote "origin"]
+	url = https://github.com/rstaneja/example-repo
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[alias]
+	lg = log --topo-order --all --graph --date=local --pretty=format:'%C(green)%h%C(reset) %><(55,trunc)%s%C(red)%d%C(reset) %C(blue)[%an]%C(reset) %C(yellow)%ad%C(reset)%n'
 
