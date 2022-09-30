@@ -24,3 +24,6 @@ git diff	q to get out of diff
 git pull origin master
 git pull origin master --allow-unrelated-histories
 git -c http.sslVerify=false push origin master
+
+git checkout 3b90b6c81b2fb491
+
